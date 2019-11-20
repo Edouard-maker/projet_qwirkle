@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1574236479 source:d:\edvard\ece\info\jeu qwirkle\menu projet\spg menu.c
+	"header.h"
+
+1574239244 d:\edvard\ece\info\jeu qwirkle\menu projet\header.h
+	<stdio.h>
+	<stdlib.h>
+
+1574249143 source:d:\edvard\ece\info\jeu qwirkle\menu projet\main.c
+	"header.h"
+
+1574165409 source:d:\edvard\ece\info\jeu qwirkle\menu projet\regles.c
+	"header.h"
+
+1574165886 source:d:\edvard\ece\info\jeu qwirkle\menu projet\tableau scores.c
+
+1574249053 source:d:\edvard\ece\info\jeu qwirkle\menu projet\jouer.c
+
+1574251875 source:d:\edvard\ece\info\jeu qwirkle\menu projet\mode de jeu+nom joueurs.c
+	"header.h"
+
