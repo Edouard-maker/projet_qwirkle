@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <windows.h>
+
+void gotoligcol( int lig, int col )
+{
+    COORD mycoord;
+
+    mycoord.X = col;
+    mycoord.Y = lig;
+    SetConsoleCursorPosition( GetStdHandle( STD_OUTPUT_HANDLE ), mycoord );
+}
+int main ()
+{
+    int i =0;
+    int j=0;
+    char colonnes=65;
+    char lignes=65;
+
+    for(i=1;i<=27;i++)
+    {
+        gotoligcol(1,i);
+        printf("%c",colonnes);
+        colonnes++;
+
+    }
+    for(j=1;j<12;j++)
+        {
+            gotoligcol(j,0);
+            printf("%c                          \n",lignes);
+            lignes++;
+        }
+
+    }
+
+
+
+}
