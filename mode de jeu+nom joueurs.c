@@ -20,11 +20,15 @@ int choix_mode()
     {
     case 1 :
         system("cls");
-        printf("Vous etes en mode normal");
+        printf("Vous etes en mode normal\n");
+        choix_nb_joueurs();
+        choix_nb();
         break;
     case 2 :
         system("cls");
-        printf("Vous etes en mode degrade");
+        printf("Vous etes en mode degrade\n");
+        choix_nb_joueurs();
+        choix_nb() ;
         break;
     }
 
