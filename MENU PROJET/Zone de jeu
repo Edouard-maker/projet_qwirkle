@@ -12,27 +12,64 @@ void gotoligcol( int lig, int col )
 }
 int main ()
 {
-    int i =0;
-    int j=0;
-    char colonnes=65;
+    int i =0,c=0,b=0,d=0,e=0,f=0;
+    int j=0,k=0,a=0;
+    char colonnes='A';
     char lignes=65;
 
-    for(i=1;i<=27;i++)
+    for(k=1;k<=55;k++)
     {
-        gotoligcol(1,i);
-        printf("%c",colonnes);
-        colonnes++;
+        gotoligcol(0,k);
+        printf("%c",205);
 
     }
-    for(j=1;j<12;j++)
+    for(a=1;a<=55;a++)
+    {
+        gotoligcol(25,a);
+        printf("%c",205);
+
+    }
+    for(c=1;c<25;++c) // boucles for pour sauter les lignes 1 à 1
+    {
+        for(b=0;b<=56;b++) //boucles for dans la premiere boucle pour passer de colonnes en colonnes
+    {
+        if(b==2)
         {
-            gotoligcol(j,0);
-            printf("%c                          \n",lignes);
+            b=b+2;
+        }
+        gotoligcol(c,b++);
+        printf("%c",186);
+
+    }
+    }
+    for(e=1;e<=56;e++)
+    {
+
+    }
+
+
+
+    gotoligcol(25,0);
+    printf("%c",200);
+    gotoligcol(0,0);
+    printf("%c",201);
+    gotoligcol(0,56);
+    printf("%c",187);
+    gotoligcol(25,56);
+    printf("%c",188);
+
+    for(i=1;i<=26;i++)
+    {
+        gotoligcol(1,(i+1)*2);
+        printf(" %c",colonnes++);
+
+
+    }
+    for(j=0;j<12;j++)
+        {
+            gotoligcol((j+1)*2,2);
+            printf("%c\n",lignes);
             lignes++;
         }
 
     }
-
-
-
-}
